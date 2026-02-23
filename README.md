@@ -6,9 +6,9 @@
 
 ## Autor
 
-Nom: [Escriu el teu nom aquí]
+Nom: Abdeslam Khfif Koubee
 
-Formant grups de treball: [Escriu els noms dels membres del grup aquí]
+Formant grups de treball: Abdeslam Khfif Koubee | Eduard Gordo Cebrià
 
 ## Descripció del projecte
 
