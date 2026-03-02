@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-hola bona tarda
-=======
-# Introducció 🚀
+hola bona tarda # Introducció 🚀
 
 En aquest procés de fer realitat la vostra empresa, el servei d’assessorament per startups que ofereix la incubadora us ha estat ajudant a planificar les vostres activitats, punts forts, etc. Dins aquest procés d’assessorament i suport us han enviat un correu amb una proposta concreta.  
 
