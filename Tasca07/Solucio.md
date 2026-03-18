@@ -114,13 +114,3 @@ Amb l'usuari `adminOU` vam intentar canviar la contrasenya d'un altre usuari i v
 *(Aquí faltarien captures demostrant que POT canviar contrasenya i que NO POT crear usuaris)*
 
 ---
-
-### Resum
-Hem implementat totes les millores que ens va demanar TransLògic:
-- Polítiques de contrasenyes endurides.
-- Desplegament automàtic de programari per departaments.
-- Perfils mòbils per als usuaris de gestió.
-- Redirecció de Documents per evitar pèrdues de dades.
-- Delegació de tasques bàsiques a un auxiliar sense donar-li massa poder.
-
-Tot funcionant i comprovat amb captures.
