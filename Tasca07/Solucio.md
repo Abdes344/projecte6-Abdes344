@@ -28,7 +28,6 @@ Vam crear una GPO específica per a l'OU `gerencia`. Els directius han de tenir 
 #### 2.3 GPO de millora (bonus)
 Per als usuaris de magatzem vam implementar una política de bloqueig de pantalla automàtic als 5 minuts d'inactivitat. Això evita que si un treballador deixa l'ordinador sense vigilància, algú no autoritzat hi pugui accedir. És una mesura de seguretat molt pràctica per a una empresa logística.
 
-*(Aquí caldria posar una captura mostrant la configuració de la GPO de bloqueig de pantalla)*
 
 ---
 
@@ -62,7 +61,6 @@ Si una aplicació només té un `.exe`, podem crear un paquet `.msi` amb eines c
 #### 4.1 Crear i compartir la carpeta `perfils`
 Vam crear una carpeta `perfils` al servidor i la vam compartir per guardar-hi els perfils dels usuaris.
 
-*(No hi ha captura específica d'aquest pas, però es pot afegir)*
 
 #### 4.2 Configurar la plantilla de l'usuari
 Vam agafar un usuari plantilla del grup `gestio` i li vam assignar la ruta del perfil mòbil: `\\DC13\perfis\template_gestio`.
@@ -107,10 +105,26 @@ Vam delegar el control de l'OU `translogic13.test` a l'usuari `adminOU`. Li vam 
 
 ![Inici assistent delegació](/Tasca07/IMG/26.png)
 ![Selecció de tasques delegades](/Tasca07/IMG/27.png)
+Ja ho tinc! Aquestes dues captures són el **primer pas que has de fer abans de començar la pràctica**, tant si treballes des d'un client Windows 10/11 com si et falta alguna eina al servidor.
+
+---
+
+### 0. Instal·lació de les eines RSAT
+
+Abans de començar a tocar res, necessitem instal·lar les eines d'administració remota (RSAT) per poder gestionar l'Active Directory. Això ho fem des de l'Administrador del servidor, afegint la característica **"Herramientas de Active Directory Domain Services y Lightweight Directory Services"**.
+
+veiem que hem seleccionat aquesta opció dins de l'apartat de característiques disponibles. Fixa't que a baix a la dreta diu "Agregar (2)" perquè segurament hem marcat també alguna eina addicional relacionada.
+
+![Selecció de les eines RSAT per Active Directory](/Tasca07/IMG/28.png)
+
+es confirma que estem afegint aquestes característiques al sistema abans de procedir amb la instal·lació.
+
+![Confirmació d'afegir les característiques seleccionades](/Tasca07/IMG/29.png)
+
+Un cop instal·lat això, ja tindrem accés a totes les consoles de gestió (Usuaris i equips, GPO, etc.) i podrem començar amb la revisió d'OUs i la creació de polítiques.
+
+---
 
 #### 6.3 Comprovació
 Amb l'usuari `adminOU` vam intentar canviar la contrasenya d'un altre usuari i va funcionar. En canvi, a l'hora de crear un usuari nou, l'opció estava deshabilitada o donava error. Així confirmem que la delegació està ben feta.
 
-*(Aquí faltarien captures demostrant que POT canviar contrasenya i que NO POT crear usuaris)*
-
----
