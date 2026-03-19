@@ -105,7 +105,6 @@ Vam delegar el control de l'OU `translogic13.test` a l'usuari `adminOU`. Li vam 
 
 ![Inici assistent delegació](/Tasca07/IMG/26.png)
 ![Selecció de tasques delegades](/Tasca07/IMG/27.png)
-Ja ho tinc! Aquestes dues captures són el **primer pas que has de fer abans de començar la pràctica**, tant si treballes des d'un client Windows 10/11 com si et falta alguna eina al servidor.
 
 ---
 
