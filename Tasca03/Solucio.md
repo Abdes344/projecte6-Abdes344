@@ -15,12 +15,12 @@ Vam aturar i deshabilitar Apache per alliberar-los.
 Després vam instal·lar Nginx. El paquet es va descarregar i configurar automàticament.
 
  – Instal·lació de Nginx:  
-![Instal·lació Nginx](Tasca03/IMG/1.png)
+![Instal·lació Nginx](/Tasca03/IMG/1.png)
 
 Un cop instal·lat, vam iniciar el servei i comprovar que estava actiu.
 
  – Estat actiu de Nginx:  
-![Estat Nginx](Tasca03/IMG/3.png)
+![Estat Nginx](/Tasca03/IMG/3.png)
 
 ---
 
@@ -30,29 +30,29 @@ Vam crear l’estructura de directoris per als dos dominis dins de `/var/www`.
 Vam assignar els permisos adequats perquè Nginx pogués llegir els fitxers.
 
 – Creació de directoris:  
-![Directoris creats](Tasca03/IMG/4.png)
+![Directoris creats](/Tasca03/IMG/4.png)
 
  – Permisos i propietat:  
-![Permisos](Tasca03/IMG/5.png)
+![Permisos](/Tasca03/IMG/5.png)
 
 A continuació, vam definir els Server Blocks en fitxers dins de `/etc/nginx/sites-available/`.  
 Cadascun especifica el nom del domini, l’arrel de documents i la pàgina d’error personalitzada.
 
  – Fitxer de configuració per a *academia.test*:  
-![Config academia](Tasca03/IMG/7.png)
+![Config academia](/Tasca03/IMG/7.png)
 
  – Fitxer per a *projectenexus.test*:  
-![Config projecte](Tasca03/IMG/8.png)
+![Config projecte](/Tasca03/IMG/8.png)
 
 Vam activar les configuracions mitjançant enllaços simbòlics a `sites-enabled`.
 
  – Enllaços creats:  
-![Enllaços simbòlics](Tasca03/IMG/6.png)
+![Enllaços simbòlics](/Tasca03/IMG/6.png)
 
 Abans de reiniciar, vam verificar que la sintaxi fos correcta.
 
  – Verificació de la configuració:  
-![nginx -t](Tasca03/IMG/9.png)
+![nginx -t](/Tasca03/IMG/9.png)
 
 ---
 
@@ -61,18 +61,18 @@ Abans de reiniciar, vam verificar que la sintaxi fos correcta.
 Per mostrar una pàgina d’error pròpia, vam crear directoris específics per a cada domini i vam generar un fitxer `404.html`.
 
  – Directoris d’error:  
-![Directoris error](Tasca03/IMG/16.png)
+![Directoris error](/Tasca03/IMG/16.png)
 
  – Contingut del 404.html per a *projectenexus.test*:  
-![404 projecte](Tasca03/IMG/17.png)
+![404 projecte](/Tasca03/IMG/17.png)
 
  – Contingut per a *academia.test*:  
-![404 academia](Tasca03/IMG/18.png)
+![404 academia](/Tasca03/IMG/18.png)
 
 Vam ajustar els permisos perquè Nginx pogués servir aquests fitxers.
 
  – Permisos finals:  
-![Permisos finals](Tasca03/IMG/19.png)
+![Permisos finals](/Tasca03/IMG/19.png)
 
 ---
 
@@ -81,22 +81,22 @@ Vam ajustar els permisos perquè Nginx pogués servir aquests fitxers.
 Per assegurar les comunicacions, vam generar un certificat autosignat amb OpenSSL.
 
  – Generació del certificat:  
-![Generació SSL](Tasca03/IMG/21.png)
+![Generació SSL](/Tasca03/IMG/21.png)
 
 Després vam modificar els Server Blocks per afegir el bloc HTTPS i la redirecció de HTTP a HTTPS.
 
  – Configuració del bloc HTTPS (vista parcial):  
-![Config HTTPS](Tasca03/IMG/23.png)
+![Config HTTPS](/Tasca03/IMG/23.png)
 
 Vam tornar a verificar la configuració i reiniciar Nginx.
 
 – Verificació final:  
-![Verificació final](Tasca03/IMG/22.png)
+![Verificació final](/Tasca03/IMG/22.png)
 
 També vam actualitzar el fitxer `/etc/hosts` per poder accedir als dominis des del navegador.
 
  – Fitxer hosts:  
-![Hosts](Tasca03/IMG/20.png)
+![Hosts](/Tasca03/IMG/20.png)
 
 ---
 
