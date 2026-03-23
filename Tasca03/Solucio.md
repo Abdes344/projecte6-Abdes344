@@ -10,7 +10,7 @@ Abans d’instal·lar Nginx, vam assegurar-nos que Apache no utilitzés els port
 Vam aturar i deshabilitar Apache per alliberar-los.
 
  – Verificació que els ports estan lliures després d’aturar Apache:  
-![Ports lliures](Tasca03/IMG/2.png)
+![Ports lliures](/Tasca03/IMG/2.png)
 
 Després vam instal·lar Nginx. El paquet es va descarregar i configurar automàticament.
 
