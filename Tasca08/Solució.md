@@ -47,11 +47,3 @@ Al Visor d’Esdeveniments (Seguretat) localitzem els intents fallits.
 **Event ID per errors d’inici de sessió:** **4625** (en aquest cas apareix 4771 per autenticació Kerberos, però l’estàndard és 4625).
 
 ---
-
-## Conclusió
-Servidor estable, auditoria funcional i evidències d’intents d’intrusió registrades.
-
----
-
-## Conclusió
-El servidor treballa correctament, l’auditoria està activada i els intents d’intrusió queden registrats per a futures anàlisis.
